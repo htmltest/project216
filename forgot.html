@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Запрос пароля</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="robots" content="noindex, nofollow"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://portal.smpins.ru/bitrix/js/intranet/intranet-common.min.css?168080048961199" type="text/css"  rel="stylesheet" />
+<link href="https://portal.smpins.ru/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?168080058022029" type="text/css"  rel="stylesheet" />
+<link href="https://portal.smpins.ru/bitrix/js/intranet/design-tokens/bitrix24/bitrix24-design-tokens.min.css?16808007021466" type="text/css"  rel="stylesheet" />
+<link href="https://portal.smpins.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16808004542320" type="text/css"  rel="stylesheet" />
+<link href="https://portal.smpins.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.css?168080052725089" type="text/css"  rel="stylesheet" />
+<link href="https://portal.smpins.ru/bitrix/cache/css/s1/login/template_923cde9dd5a3c0c90188992a77154c14/template_923cde9dd5a3c0c90188992a77154c14_v1.css?168080082130091" type="text/css"  data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/main/core/core.min.js?1680800586220477"></script>
+
+<script>BX.setJSList(['https://portal.smpins.ru/bitrix/js/main/core/core_ajax.js','https://portal.smpins.ru/bitrix/js/main/core/core_promise.js','https://portal.smpins.ru/bitrix/js/main/polyfill/promise/js/promise.js','https://portal.smpins.ru/bitrix/js/main/loadext/loadext.js','https://portal.smpins.ru/bitrix/js/main/loadext/extension.js','https://portal.smpins.ru/bitrix/js/main/polyfill/promise/js/promise.js','https://portal.smpins.ru/bitrix/js/main/polyfill/find/js/find.js','https://portal.smpins.ru/bitrix/js/main/polyfill/includes/js/includes.js','https://portal.smpins.ru/bitrix/js/main/polyfill/matches/js/matches.js','https://portal.smpins.ru/bitrix/js/ui/polyfill/closest/js/closest.js','https://portal.smpins.ru/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','https://portal.smpins.ru/bitrix/js/main/polyfill/find/js/find.js','https://portal.smpins.ru/bitrix/js/main/polyfill/matches/js/matches.js','https://portal.smpins.ru/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','https://portal.smpins.ru/bitrix/js/main/core/core.js','https://portal.smpins.ru/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','https://portal.smpins.ru/bitrix/js/main/lazyload/dist/lazyload.bundle.js','https://portal.smpins.ru/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','https://portal.smpins.ru/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+</script>
+<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'Y','pull_config_timestamp':'1621461432','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM_PORTAL','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'https://portal.smpins.ru/','USER_ID':'','SERVER_TIME':'1682594636','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'9bedb44d9b2704a13fd89f6dd793c49c'});</script>
+
+
+<script type="text/javascript"  src="https://portal.smpins.ru/bitrix/cache/js/s1/login/kernel_main/kernel_main_v1.js?1680862848199006"></script>
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/pull/protobuf/protobuf.min.js?162144650276433"></script>
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/pull/protobuf/model.min.js?162144650214190"></script>
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/rest/client/rest.client.min.js?16214465019240"></script>
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/pull/client/pull.client.min.js?168080075948309"></script>
+<script type="text/javascript" src="https://portal.smpins.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.js?168080052465492"></script>
+<script type="text/javascript">BX.setJSList(['https://portal.smpins.ru/bitrix/js/main/core/core_fx.js','https://portal.smpins.ru/bitrix/js/main/core/core_dd.js','https://portal.smpins.ru/bitrix/js/main/pageobject/pageobject.js','https://portal.smpins.ru/bitrix/js/main/date/main.date.js','https://portal.smpins.ru/bitrix/js/main/utils.js','https://portal.smpins.ru/bitrix/js/main/rating_like.js','https://portal.smpins.ru/bitrix/js/main/core/core_date.js','https://portal.smpins.ru/bitrix/js/main/core/core_tooltip.js','https://portal.smpins.ru/bitrix/js/main/core/core_window.js','https://portal.smpins.ru/bitrix/js/main/dd.js','https://portal.smpins.ru/local/templates/login/script.js']);</script>
+<script type="text/javascript">BX.setCSSList(['https://portal.smpins.ru/local/customize/custom/style.css','https://portal.smpins.ru/local/templates/login/template_styles.css']);</script>
+
+
+<script type="text/javascript"  src="https://portal.smpins.ru/bitrix/cache/js/s1/login/template_33651f89c88dcee7817b22735f04b053/template_33651f89c88dcee7817b22735f04b053_v1.js?1680800821526"></script>
+
+    </head>
+<body>
+<div class="log-popup-wrap " id="login-popup-wrap">
+    <div class="log-popup" id="login-popup">
+    <div class="auth-logo-wrapper">
+        <img src="https://portal.smpins.ru/local/templates/login/images/logo.svg">
+    </div>
+	<form name="form_auth" method="post" target="_top" class="forgot-pass-form-wrapper" action="/index.php?forgot_password=yes">
+		<div class="log-popup-header forgot-pass-notification">Запрос пароля</div>
+							<input type="hidden" name="backurl" value="/index.php" />
+				<input type="hidden" name="AUTH_FORM" value="Y">
+		<input type="hidden" name="TYPE" value="SEND_PWD">
+
+		<div class="">
+			<div class="login-item">
+                <span class="login-label">Логин</span>
+				<input class="login-inp" type="text" name="USER_LOGIN" maxlength="50" value=""/>
+                <span class="login-label" style="display: block;text-align: center;">или</span>
+			</div>
+			<div class="login-item">
+                <span class="login-label">E-Mail</span>
+				<input class="login-inp" type="text" name="USER_EMAIL" maxlength="255" />
+			</div>
+			<div class="login-item forgot-pass-captcha">
+				<input type="hidden" name="captcha_sid" value="0e227d652463f5ed877844646542edab" />
+				<img src="https://portal.smpins.ru/bitrix/tools/captcha.php?captcha_sid=0e227d652463f5ed877844646542edab" width="180" height="40" alt="CAPTCHA" />
+			</div>
+			<div class="login-item">
+				<span class="login-item-alignment"></span><span class="login-label">Введите слово на картинке</span>
+				<input class="login-inp" type="text" name="captcha_word" maxlength="50" value="" size="15" />
+			</div>
+		</div>
+		<div class="login-text login-item" style="text-align: center;">
+			Если вы забыли пароль, введите логин или E-Mail.<br />Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.			<div class="login-links"><a href="https://portal.smpins.ru/index.php?login=yes">Авторизация</a></div>
+		</div>
+
+		<div class="log-popup-footer">
+			<button class="login-btn" value="Выслать" onclick="BX.addClass(this, 'wait');">Выслать</button>
+		</div>
+	</form>
+
+	<script type="text/javascript">
+		BX.ready(function() {
+			BX.focus(document.forms["form_auth"]["USER_LOGIN"]);
+		});
+	</script>
+
+<script type="text/javascript">
+    BX.ready(function () {
+        var lang_toggle = BX('language-box');
+        BX.bind(lang_toggle, 'click', function () {
+            BX.PopupMenu.show('feed-filter-popup', lang_toggle, [
+                    {
+                        text: "Русский",
+                        className: "language-box-item ru",
+                        onclick: function () {
+                            reloadPage("ru");
+                        }
+                    },
+                    {
+                        text: "Английский",
+                        className: "language-box-item en",
+                        onclick: function () {
+                            reloadPage("en");
+                        }
+                    },
+                    {
+                        text: "Немецкий",
+                        className: "language-box-item de",
+                        onclick: function () {
+                            reloadPage("de");
+                        }
+                    },
+                    {
+                        text: "Украинский",
+                        className: "language-box-item ua",
+                        onclick: function () {
+                            reloadPage("ua");
+                        }
+                    },
+                    {
+                        text: "Испанский",
+                        className: "language-box-item la",
+                        onclick: function () {
+                            reloadPage("la");
+                        }
+                    }
+                ],
+                {
+                    offsetTop: 10,
+                    offsetLeft: 0,
+                    angle: {offset: 33}
+                }
+            );
+        })
+    });
+
+    function reloadPage(lang) {
+        var url = window.location.href;
+        url = url.replace(/(\?|\&)user_lang=[A-Za-z]{2}/, "");
+        url += (url.indexOf("?") == -1 ? "?" : "&") + "user_lang=" + lang;
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
