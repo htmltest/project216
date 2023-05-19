@@ -35,16 +35,20 @@
 
 <script type="text/javascript"  src="https://portal.smpins.ru/bitrix/cache/js/s1/login/template_33651f89c88dcee7817b22735f04b053/template_33651f89c88dcee7817b22735f04b053_v1.js?1680800821526"></script>
 
+<meta name="viewport" content="width=device-width">
+<link href="css/new.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/new.js"></script>
+
     </head>
 <body>
 <div class="log-popup-wrap " id="login-popup-wrap">
     <div class="log-popup" id="login-popup">
     <div class="auth-logo-wrapper">
-        <img src="https://portal.smpins.ru/local/templates/login/images/logo.svg">
+        <img src="images/logo.svg">
     </div>
 	<form name="form_auth" method="post" target="_top" class="forgot-pass-form-wrapper" action="/index.php?forgot_password=yes">
 		<div class="log-popup-header forgot-pass-notification">Запрос пароля</div>
-		<div class="errortext">Символы с картинки введены неверно.<br /></div>					<input type="hidden" name="backurl" value="/index.php" />
+		<div class="notetext">Контрольная строка, а также ваши регистрационные данные были высланы на email. Пожалуйста, дождитесь письма, так как контрольная строка изменяется при каждом запросе.<br></div>					<input type="hidden" name="backurl" value="/index.php" />
 				<input type="hidden" name="AUTH_FORM" value="Y">
 		<input type="hidden" name="TYPE" value="SEND_PWD">
 
@@ -60,7 +64,7 @@
 			</div>
 			<div class="login-item forgot-pass-captcha">
 				<input type="hidden" name="captcha_sid" value="053bdfb9ea5c4407dd9a4db55b7fa166" />
-				<img src="https://portal.smpins.ru/bitrix/tools/captcha.php?captcha_sid=053bdfb9ea5c4407dd9a4db55b7fa166" width="180" height="40" alt="CAPTCHA" />
+				<img src="files/captcha.jpg" width="180" height="40" alt="CAPTCHA" />
 			</div>
 			<div class="login-item">
 				<span class="login-item-alignment"></span><span class="login-label">Введите слово на картинке</span>

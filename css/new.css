@@ -1,0 +1,69 @@
+@font-face {font-family:"Gilroy"; src:url("fonts/GilroyRegular.woff2") format("woff2"), url("fonts/GilroyRegular.woff") format("woff"); font-weight:normal; font-style:normal; font-display:swap}
+@font-face {font-family:"Gilroy"; src:url("fonts/GilroyMedium.woff2") format("woff2"), url("fonts/GilroyMedium.woff") format("woff"); font-weight:500; font-style:normal; font-display:swap}
+@font-face {font-family:"Gilroy"; src:url("fonts/GilroySemiBold.woff2") format("woff2"), url("fonts/GilroySemiBold.woff") format("woff"); font-weight:600; font-style:normal; font-display:swap}
+
+html {width:auto}
+body {background:#FFFFFF; font-family:Gilroy, sans-serif; min-width:480px; width:auto}
+
+.log-popup-wrap {background:url(../images/bg.png) no-repeat center; background-size:100% auto; width:auto}
+
+@media (max-width:1023px) {
+    #login-popup-wrap {background:url(../images/bg-tablet.png) no-repeat center; background-size:auto}
+}
+
+@media (max-width:767px) {
+    #login-popup-wrap {background:#FFFFFF}
+}
+
+.log-popup {width:340px; padding:30px 0; border-radius:0}
+.auth-logo-wrapper {width:172px; margin:0 auto; padding:0 0 80px 0}
+.auth-logo-wrapper > img {max-height:none; width:100%}
+
+@media (max-width:1023px) {
+    .log-popup {padding:100px 0}
+}
+
+.log-popup-header {width:auto; font:600 40px/48px Gilroy, sans-serif; color:#2F2A85; margin-bottom:50px}
+
+#login-popup > form {width:auto}
+
+.login-item {margin:24px 0; position:relative}
+.login-item.first-item {margin-bottom:24px}
+.login-item.password-item-wrapper {margin-bottom:10px}
+.login-inp {position:relative; border:1px solid #E6E6EF; font:600 20px/26px Gilroy, sans-serif; color:#3E3E59; vertical-align:top; margin:0; padding:29px 14px 9px 14px; width:100%; height:66px; box-sizing:border-box; outline:none; border-radius:10px; background:#FFFFFF; -webkit-appearance:none; transition:all 0.3s}
+.login-inp:focus {border-color:#E86630}
+
+.login-label {position:absolute; left:15px; font:600 20px/26px Gilroy, sans-serif; color:#8D8DA6; top:20px; transition:all 0.3s; font-weight:600; z-index:1; pointer-events:none; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; right:15px}
+.login-item.focus .login-label {top:10px; font-size:11px; line-height:15px; letter-spacing:0.09em; text-transform:uppercase}
+
+.login-label:last-child {position:relative; left:auto; top:auto; right:auto; margin:8px 0 -16px 0; font:500 15px/23px Gilroy, sans-serif; color:#5C5C73}
+.login-item.focus .login-label:last-child {top:auto; font-size:15px; line-height:23px; letter-spacing:0; text-transform:none}
+
+#show-password-button {right:15px; top:21px}
+
+.remember-me-wrapper .login-link-forgot-pass-wrap {height:auto}
+.remember-me-wrapper .login-item,
+.remember-me-wrapper a.login-link-forgot-pass {margin-bottom:0}
+.remember-me-wrapper .login-link-forgot-pass-wrap a.login-link-forgot-pass {color:#E86630; font:500 15px/23px Gilroy, sans-serif; transition:color 0.2s}
+.remember-me-wrapper .login-link-forgot-pass-wrap a.login-link-forgot-pass:hover {color:#ED885E}
+
+.log-popup-footer {height:auto; padding:0; margin:30px 0 0 0}
+
+.login-btn {display:block; border-radius:4px; background:#E86630; margin:0; padding:19px 0; width:100%; height:auto; outline:none; overflow:visible; border:none; text-decoration:none; box-sizing:border-box; color:#FFFFFF; text-align:center; text-transform:uppercase; font:600 11px/15px Gilroy, sans-serif; letter-spacing:0.09em; -webkit-appearance:none; cursor:pointer; transition:background 0.3s}
+.login-btn:hover {background:#ED885E; color:#FFFFFF}
+
+.errortext {margin:30px 0; padding:16px; border:none; min-height:0; width:auto; text-shadow:none; background:#FFFFFF; box-shadow:0px 8px 24px rgba(188, 63, 70, 0.1); border-radius:8px; color:#BC3F46; font:500 13px/18px Gilroy, sans-serif}
+.errortext::before {display:none}
+
+.login-item.forgot-pass-captcha {text-align:left; margin:40px 0 -12px 0}
+.login-item-alignment {display:none}
+
+.login-text {margin:-12px 0 0 0; font:500 15px/23px Gilroy, sans-serif; color:#5C5C73; text-align:left !important; padding:0 17px 0 0; box-sizing:border-box}
+
+.login-links {margin:12px 0 0 0}
+.login-links a {color:#E86630; font:500 15px/23px Gilroy, sans-serif; transition:color 0.2s}
+.login-links a:hover {color:#ED885E}
+
+.forgot-pass-form-wrapper .errortext {width:auto}
+
+.notetext {margin:30px 0; padding:16px; border:none; min-height:0; width:auto; text-shadow:none; background:#FFFFFF; box-shadow:0px 8px 24px rgba(188, 63, 70, 0.1); border-radius:8px; color:#BC3F46; font:500 13px/18px Gilroy, sans-serif}
